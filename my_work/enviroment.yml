@@ -1,0 +1,17 @@
+name: qgss-2025-env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10  # You can specify your desired Python version here
+  - pip
+  - qiskit
+  - qiskit-ibm-runtime
+  - qiskit-terra  # qiskit[visualization] includes qiskit-terra
+  - ipykernel     # For Jupyter notebook functionality
+  - matplotlib    # Part of qiskit[visualization]
+  - jupyter
+  - notebook
+  - pylatexenc    # Recommended for some Qiskit visualizations
+  - tk            # Recommended for some Qiskit visualizations
+  - Pillow        # Recommended for some Qiskit visualizations
