@@ -3,15 +3,16 @@ channels:
   - defaults
   - conda-forge
 dependencies:
-  - python=3.10  # You can specify your desired Python version here
+  - python=3.10
   - pip
-  - qiskit
+  - qiskit=2.1
   - qiskit-ibm-runtime
-  - qiskit-terra  # qiskit[visualization] includes qiskit-terra
   - ipykernel     # For Jupyter notebook functionality
-  - matplotlib    # Part of qiskit[visualization]
+  - matplotlib    
   - jupyter
   - notebook
   - pylatexenc    # Recommended for some Qiskit visualizations
   - tk            # Recommended for some Qiskit visualizations
   - Pillow        # Recommended for some Qiskit visualizations
+  - pip:
+      - "qc-grader[qiskit,jupyter] @ git+https://github.com/qiskit-community/Quantum-Challenge-Grader.git"
